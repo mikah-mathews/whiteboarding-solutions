@@ -1,1 +1,9 @@
-let 
+goal is to replace spaces with '%20'
+input is string - output is string
+use a for loop to check each 'letter' in string
+if string[i] is a space, change it to be %20
+return changed string
+
+let replaceString = (string) => () {
+  let 
+}
