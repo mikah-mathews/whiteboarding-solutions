@@ -3,30 +3,35 @@ key pair value with each unique occurrence, for each new occurrence +1
 split string into an Object
 for loop to check if there is occurrence already, if not add it, then also add value
 
+want to check if the letter[i] is the same as letter[i+1]
+if letter[i] === letter[i+1]
+
 let stringCompress = function(string) {
   let splitString = string.split("");
   let occurrences = [];
+  let finalResult = "";
   for(let i = 0; i < splitString.length; i++) {
-    if (!occurrences.includes(array[i])) {
-      occurrences.push(array[i]);
-    }
+    if (!occurrences.includes(splitString[i])) {
+      occurrences.push(splitString[i]);
+    }    
   }
+  for (let i = 0; i < occurrences.length; i++) {
+    let count = 0;
+    for (let j = 0; j < splitString.length; j++) {
+      if (occurrences[i] === splitString[j] && occurrences[i] === splitString[j + 1]) {
+        count++
+      } else if()
+    }
+    if (count === 0) {
+      finalResult += (occurrences[i])
+    } else {
+      finalResult += (count + occurrences[i]);
+    }
     
+  }  
+  return finalResult;  
 }
+ "3ab2c4da"
 
 
-
-
-
-let occurrenceObject = {};
-  for(let i = 0; i < splitString.length; i++) {
-    
-    if(!(splitString[i] in occurrenceObject)) {
-      occurrenceObject[splitString[i]] = 1;
-    } else if (splitString[i] in occurrenceObject) {
-      occurrenceObject[splitString[i]] += 1;
-    }
-  }
-  let finalString = occurrenceObject.toString();
-  return finalString;
 
