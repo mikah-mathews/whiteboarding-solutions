@@ -5,8 +5,22 @@ for loop to check if there is occurrence already, if not add it, then also add v
 
 let stringCompress = function(string) {
   let splitString = string.split("");
-  let occurrenceObject = {};
+  let occurrences = [];
   for(let i = 0; i < splitString.length; i++) {
+    if (!occurrences.includes(array[i])) {
+      occurrences.push(array[i]);
+    }
+  }
+    
+}
+
+
+
+
+
+let occurrenceObject = {};
+  for(let i = 0; i < splitString.length; i++) {
+    
     if(!(splitString[i] in occurrenceObject)) {
       occurrenceObject[splitString[i]] = 1;
     } else if (splitString[i] in occurrenceObject) {
@@ -15,5 +29,4 @@ let stringCompress = function(string) {
   }
   let finalString = occurrenceObject.toString();
   return finalString;
-}
 
