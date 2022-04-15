@@ -22,7 +22,7 @@ Example
 
 ```Input: "Jasmine Ann Jones"
 
-Output: "Jasmine%20Ann%20Jones"```
+Output: "Jasmine%20Ann%20Jones" ```
 
 Question #2: Array Deduping
 
