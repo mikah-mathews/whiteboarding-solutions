@@ -1,0 +1,16 @@
+removing duplicates from an array
+input is array, output is array
+use a loop to go through each item in array
+have array that each first occurrence is added to
+if array already contains an occurrence don't add it
+return uniqueOccurrenceArray
+
+let deduping = function(array) {
+  let uniqueOccurrences = [];
+  for(let i = 0; i < array.length; i++) {
+    if (!uniqueOccurrences.includes(array[i])) {
+      uniqueOccurrences.push(array[i]);
+    }
+  }
+  return uniqueOccurrences;
+}
