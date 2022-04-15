@@ -4,6 +4,12 @@ use a for loop to check each 'letter' in string
 if string[i] is a space, change it to be %20
 return changed string
 
-let replaceString = (string) => () {
-  let 
-}
+let replaceString = function(string) {
+  let splitStringArray = string.split("");
+  for (let i = 0; i < splitStringArray.length; i++){
+    if(splitStringArray[i] === " "){
+      splitStringArray[i] = "%20";
+    }
+  }
+  return splitStringArray.join("");
+};
