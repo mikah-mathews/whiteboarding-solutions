@@ -1,0 +1,19 @@
+compressing a string
+key pair value with each unique occurrence, for each new occurrence +1
+split string into an Object
+for loop to check if there is occurrence already, if not add it, then also add value
+
+let stringCompress = function(string) {
+  let splitString = string.split("");
+  let occurrenceObject = {};
+  for(let i = 0; i < splitString.length; i++) {
+    if(!(splitString[i] in occurrenceObject)) {
+      occurrenceObject[splitString[i]] = 1;
+    } else if (splitString[i] in occurrenceObject) {
+      occurrenceObject[splitString[i]] += 1;
+    }
+  }
+  let finalString = occurrenceObject.toString();
+  return finalString;
+}
+
