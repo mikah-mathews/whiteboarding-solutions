@@ -4,7 +4,9 @@ split string into an Object
 for loop to check if there is occurrence already, if not add it, then also add value
 
 want to check if the letter[i] is the same as letter[i+1]
-if letter[i] === letter[i+1]
+if letter[i] === letter[i+1] up letter count
+else if letter[i] === occurrence[i]
+
 
 let stringCompress = function(string) {
   let splitString = string.split("");
@@ -31,7 +33,6 @@ let stringCompress = function(string) {
   }  
   return finalResult;  
 }
- "3ab2c4da"
 
 
 
